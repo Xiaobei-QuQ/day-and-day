@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .menu{
+        width: 150px;
+        height: 300px;
+        background: red;
+        float: left;
+    }
+    .aside{
+        width: 150px;
+        height: 300px;
+        background: red;
+        float: right;
+    }
+    .main{
+        margin-right: 160px;
+        margin-left: 160px;
+        background-color: blue;
+        height: 200px;
+    }
+    .clearfix::after{  /*父元素*/
+		content: '';
+		display: block;
+		clear: both;
+	}
+    #content{
+        background-color: yellow;
+    }
+    #footer{
+        background-color: grey;
+    }
+</style>
+<body>
+    <div id="content" class="clearfix">
+        <div class="menu">侧边栏固定</div>
+        <div class="aside">侧边栏固定宽度</div>
+        <div class="main">内容区块自适应宽度</div>
+    </div>
+    <div id="footer">我是footer，但我的样式粗线了问题</div>
+</body>
+</html>
