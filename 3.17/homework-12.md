@@ -175,49 +175,170 @@ PostCSS的特点则是模块化。将css4+上的新特性迁移到css3上，可�
 ```
  
 
-6
-实现如下居中方式，并附上 Demo 链接
+6.实现如下居中方式，并附上 Demo 链接
 要求：并列三个按钮，在父容器内水平居中
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中-3</title>
+  <style> 
+    .layout {
+      width: 1200px;
+      margin: 0 auto;
+      height: 180px;
+      text-align: center;
+      background: #ccc;
+      position: relative;
+    }
+    .all-button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .button{
+      display: inline-block;
+      padding: 10px;
+      color: #fff;
+      background: red;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    
+  </style>
 
-
+</head>
+<body>
+  <div class="layout">
+    <div class="all-button">
+      <div class="button">按钮1</div>
+      <div class="button">按钮2</div>
+      <div class="button">按钮3</div>
+    </div>
+  </div>
+</body>
+</html>
  
+```
 
 
-Find
-No Results
-
-7
-实现如下居中效果，
+7.实现如下居中效果，
 要求：图片在容器内水平垂直居中，容器宽高大于图片宽高
 
+```
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中-3</title>
+  <style>
+    .ct{
+      width: 350px;
+      height: 350px;
+      border: 2px solid red;
+      text-align: center;
+    }
+    .ct::before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+    }
+    img{
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="ct">
+    <img src="https://jirengu.com/data/upload/2017/0118/17/587f39fba695a.png" alt="">
+  </div>
+</body>
+</html>
 
- 
+```
 
-
-Find
-No Results
-
-8
-实现如下居中方式
+8.实现如下居中方式
 要求： 固定宽高的块在浏览器窗口水平垂直居中
+```
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中-4</title>
+  <style> 
+  body{
+    margin: 0;
+    padding: 0;
+  }
+    .page {
+    width: 100vw;
+    height: 100vh;
+    display: flex; /*弹性布局*/
+    align-items: center; /*垂直居中*/
+    justify-content: center; /*水平居中*/
+    }
+    .layout {
+      background: #333333;
+      width: 200px;
+      height: 200px;
+      border: 1px solid red;
+     
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="layout"></div>
+  </div>
+  
+</body>
+</html>
 
- 
+```
 
-
-Find
-No Results
-
-9
-实现如下居中方式
+9.实现如下居中方式
 要求： 不定宽高的块在浏览器窗口水平垂直居中
 
-
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>居中-5</title>
+  <style>
+    .layout {
+      background: #ccc;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      padding: 20px;
+    }
+    .container {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <h1>这里是内容</h1>
+    <div class="container">内容的宽高不定</div>
+  </div>
+</body>
+</html>
+```
  
 
-
-Find
-No Results
-
-预览 提交 返回
-© 2014-2018 饥人谷版权所有 浙ICP备14041127号-1 | 微信公众号: XDML
