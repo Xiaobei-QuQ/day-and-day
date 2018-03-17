@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三栏布局</title>
+</head>
+  <style>
+    .left-aside{
+      float: left;
+      width: 200px;
+      height: 400px;
+      background-color: red;
+    }
+    .right-aside{
+      float: right;
+      width: 200px;
+      height: 400px;
+      background-color: blue;
+    }
+    .main{
+      margin-left: 210px;
+      margin-right: 210px;
+      height: 450px;
+      background-color: pink;
+    }
+    .latout::after{
+      content:'';
+      display: block;
+      clear: both;
+    }
+  </style>
+<body>
+    <div class="layout">
+      <div class="left-aside"></div>
+      <div class="right-aside"></div>
+      <div class="main"></div>
+      
+    </div>
+</body>
+</html>

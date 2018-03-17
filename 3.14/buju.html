@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .layout{
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        #header{
+            height: 60px;
+            background-color: red;
+        }
+        #content {
+            position: relative;
+        }
+        #content .aside {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            height: 300px;
+            background-color: green;
+        }
+        #content .main{
+            margin-right: 110px;
+            height: 500px;
+            background-color: pink;
+        }
+        #footer{
+            height: 50px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div id="header">头部</div>
+        <div id="content">
+            <div class="aside"></div>
+            <div class="main"></div>
+        </div>
+        <div id="footer">尾部</div>
+    </div>
+</body>
+</html>
