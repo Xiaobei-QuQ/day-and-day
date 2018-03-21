@@ -381,11 +381,11 @@ footer .contact {
 }
 @font-face {
   font-family: 'tubiao';  /* project id 587000 */
-  src: url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot');
-  src: url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.woff') format('woff'),
-  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.svg#iconfont') format('svg');
+  src: url('https://at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot');
+  src: url('https:https:https:https://at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot?#iefix') format('embedded-opentype'),
+  url('https:https:https://at.alicdn.com/t/font_587000_0ly6almi4re5qaor.woff') format('woff'),
+  url('https:https://at.alicdn.com/t/font_587000_0ly6almi4re5qaor.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_587000_0ly6almi4re5qaor.svg#iconfont') format('svg');
 }
 .footer-main ul {
   float: left;
