@@ -380,13 +380,13 @@ footer .contact {
   color: #444;
 }
 @font-face {
-  font-family: 'iconfont';  /* project id 587000 */
-  src: url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot');
-  src: url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.woff') format('woff'),
-  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.svg#iconfont') format('svg');
-} 
+  font-family: 'tubiao';  /* project id 587000 */
+  src: url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot');
+  src: url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_587000_0ly6almi4re5qaor.svg#iconfont') format('svg');
+}
 .footer-main ul {
   float: left;
   margin: 0 auto;
@@ -397,7 +397,7 @@ footer .contact {
 }
 
 .footer-main ul li {
-  font-family: iconfont;
+  font-family: tubiao;
   font-size: 30px;
   margin-right: 50px;
   padding: 20px;
