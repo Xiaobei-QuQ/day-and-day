@@ -381,11 +381,11 @@ footer .contact {
 }
 @font-face {
   font-family: 'iconfont';  /* project id 587000 */
-  src: url('http://at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot');
-  src: url('http://at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot?#iefix') format('embedded-opentype'),
-  url('http://at.alicdn.com/t/font_587000_ee5731c2iny4lsor.woff') format('woff'),
-  url('http://at.alicdn.com/t/font_587000_ee5731c2iny4lsor.ttf') format('truetype'),
-  url('http://at.alicdn.com/t/font_587000_ee5731c2iny4lsor.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot');
+  src: url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_587000_ee5731c2iny4lsor.svg#iconfont') format('svg');
 } 
 .footer-main ul {
   float: left;
