@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var xhr = new XMLHttpRequest()
+		xhr.open('GET','https://easy-mock.com/mock/5ad5ede4773784316889f3b8/north/getType',true)
+		xhr.responseType = 'text'
+		xhr.send()
+	
+		console.log('readyState: ',xhr.readyState)
+		xhr.addEventListener('readystatechange',function(){
+		    console.log('readyState: ',xhr.readyState)
+		})
+
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState === 4 && xhr.status === 200){
+				console.log(xhr.status);
+				console.log(xhr.responseText)
+			}
+		}
+		// xhr.addEventListener('load',function(){
+		//     console.log(xhr.status)
+		//     if((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304){
+		//         var data = xhr.responseText
+		//         console.log(data)
+		//     }else{
+		//     console.loh('error')
+		// }
+		// })
+		
+		xhr.onerror = function(){
+		    console.log('error')
+		}	
+
+		var xhr2 = new XMLHttpRequest()
+		xhr2.open('POST','http://rap2api.taobao.org/app/mock/10668/POST//north',true)  //post方法放在send里面传输
+		xhr2.send(makeUrl({
+			usename: 'north',
+			age: 18
+		}))
+		xhr2.onload = function(){
+			console.log(xhr2.responseText)
+		}
+		function makeUrl(obj){
+			var arr= []
+			for(var key in obj){
+				arr.push(key + '=' + obj[key])
+			}
+			return arr.join('&')
+
+		}
+
+		</script>
+</body>
+</html>
